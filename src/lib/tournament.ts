@@ -3,6 +3,7 @@ export type Category = {
   name: string;
   price: number;
   capacity: number;
+  stripePriceId: string;
 };
 
 export const tournament = {
@@ -11,11 +12,41 @@ export const tournament = {
   dateLabel: "2026年12月開催",
   currency: "jpy",
   categories: [
-    { id: "mens-doubles-open", name: "男子ダブルス Open", price: 6000, capacity: 160 },
-    { id: "womens-doubles-open", name: "女子ダブルス Open", price: 6000, capacity: 160 },
-    { id: "mixed-doubles-open", name: "ミックスダブルス Open", price: 6000, capacity: 220 },
-    { id: "mens-singles-open", name: "男子シングルス Open", price: 5000, capacity: 120 },
-    { id: "womens-singles-open", name: "女子シングルス Open", price: 5000, capacity: 80 },
+    {
+      id: "mens-doubles-open",
+      name: "男子ダブルス Open",
+      price: 6000,
+      capacity: 160,
+      stripePriceId: "price_1TQVdiClMg34X5M4x7lo2ymG",
+    },
+    {
+      id: "womens-doubles-open",
+      name: "女子ダブルス Open",
+      price: 6000,
+      capacity: 160,
+      stripePriceId: "price_1TQVdiClMg34X5M4x7lo2ymG",
+    },
+    {
+      id: "mixed-doubles-open",
+      name: "ミックスダブルス Open",
+      price: 6000,
+      capacity: 220,
+      stripePriceId: "price_1TQVdiClMg34X5M4x7lo2ymG",
+    },
+    {
+      id: "mens-singles-open",
+      name: "男子シングルス Open",
+      price: 5000,
+      capacity: 120,
+      stripePriceId: "price_1TQVdiClMg34X5M4x7lo2ymG",
+    },
+    {
+      id: "womens-singles-open",
+      name: "女子シングルス Open",
+      price: 5000,
+      capacity: 80,
+      stripePriceId: "price_1TQVdiClMg34X5M4x7lo2ymG",
+    },
   ] satisfies Category[],
 };
 
